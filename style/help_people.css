@@ -1,0 +1,226 @@
+*{
+    padding:0;
+    margin:0;
+
+}
+
+body{
+
+    background-image: url('../img/background_page.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+     max-width: 1440px;
+     margin:0 auto;
+    
+}
+
+.container{
+    padding-right:150px;
+    padding-left:150px; 
+    
+}
+.site-search{
+    width:302px;
+    height: 33px;
+    padding-left:24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border:none;
+}
+
+.volunters_header{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 40px;
+    margin: 0 auto;
+    
+}
+.volunteers{
+    display: flex;
+    justify-content: space-between;
+    margin-top:65px;
+
+}
+
+
+.filter-btn{
+    width: 138px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    text-transform: uppercase;
+    background-color: #9688E7;
+    color:#FFFFFF;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+}
+.empty{
+    width:450px;
+}
+.volunteers_list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top:106px;
+}
+.volunteers_items{
+   
+    list-style-type: none;
+    
+}
+.volunteers_img{
+  
+    width:270px;
+    height: 270px;
+   
+    cursor: pointer;
+}
+
+
+.help_disabled{
+    background-image: url('../img/help_disabled.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.help_grandfather{
+    background-image: url('../img/help_grandfather.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.help_pc{
+    background-image: url('../img/help_pc.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.help_disabled-two{
+    background-image: url('../img/help_disabled-two.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.help_disabled-three{
+    background-image: url('../img/help_disabled-three.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.buy{
+    background-image: url('../img/buy.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.children_help{
+    background-image: url('../img/children_help.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+
+}
+
+.communication_help{
+    background-image: url('../img/communication_help.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+
+}
+.events_links{
+    display:block;
+    background: linear-gradient(95.92deg, #FFCD29 -5.91%, #DE9322 94.33%);
+}
+.stars_img{
+    background-image: url('../img/star.png'); 
+    background-repeat: repeat-x;
+    background-position-y: 10px;
+    margin-left: 10px;
+    margin:0 auto;
+    width:135px;
+    height: 98px;
+    
+}
+.btn_wrap{
+    display: flex;
+    justify-content: flex-end;
+    margin-top:42px;
+   
+}
+.volunteers_btn{
+    width: 180px;
+    height: 61px;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #FFFFFF;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    border: none;
+    background-image:linear-gradient(to right, #FFCD29, #DE9322);
+    text-transform: uppercase;
+}
+.partners_lit{
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+    list-style-type: none;
+    width:450px;
+    margin-top:387px;
+    margin-bottom: 93px;
+
+}
+.gosuslugi_style{
+    align-self:stretch;
+    padding-top:50px;
+}
+.partners_wrap{
+    display: flex;
+    justify-content:space-around
+}
+.support_btn{
+    display: block;
+    width:174px;
+    height: 46px;
+    cursor: pointer;
+    margin-top:420px;
+    margin-bottom: 93px;
+    background-image:linear-gradient(to right, #FFCD29, #DE9322);
+    border: none;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+.description{
+    font-family: 'Inter';
+    width:270px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: #000000;
+
+
+}
