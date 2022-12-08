@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/shelters.css">
+    <title>Приюты</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrap">
+                <div class="search-logo_wrap">
+                    
+                    <div class="logo_wrap">
+                        <div class="logo">
+                            <a href="main.html">
+                                <img src="img/logo_two.png" alt="логотип">
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+                
+
+            
+                <div class="right_group-block">
+                    <div class="reg-auth_btn-block">
+                    
+                        <a class="reg_items" href="#">Войти</a>
+                
+                    
+                        <a class=reg_items-no-svg href="#">регистрация</a>
+                    
+                </div>
+                <div class="search">
+                
+                    
+                    <input type="search" class="site-search" name="search" placeholder="поиск...">
+                    <div class="search-img_block">
+                        <img  class="logo_items" src="img/search.png" class="search_img" alt="поиск">
+                    </div>
+                </div>
+                
+                </div>
+            
+            </div>  
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section>
+                <h2 class="shelters_header">Приюты домашних животных</h2>
+                <ul class="shelters_list">
+                    <li>
+                        <div class="shelters_waii-img"></div>
+                        <h3 class="shelters_name">Потеряшка</h3>
+                        <a class="visit_btn" id="shelters" href="info_shelters.html">посетить</a>
+                    </li>
+                    <li>
+                        <div class="shelters_teremok-img"></div>
+                        <h3 class="shelters_name">Приют-передержка 'Теремок'</h3>
+                        <a  class="visit_btn" href="#">посетить</a>
+                    </li>
+                    <li>
+                        <div class="shelters_island-hope-img"></div>
+                        <h3 class="shelters_name">Островок надежды</h3>
+                        <a class="visit_btn" href="#">посетить</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    
+    <script>
+        let shelters=document.querySelectorAll('.shelters_list li')[0]
+        shelters.addEventListener('click', function(e){
+            let target=e.target;
+            if(target.id=='shelters'){
+                window.location.href = 'info_shelters.html';
+            }
+        })
+    </script>
+</body>
+</html>
