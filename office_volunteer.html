@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет волонтера</title>
+    
+    <link rel="stylesheet" href="style/office_volonteers.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrap">
+                <div class="search-logo_wrap">
+                    
+                    <div class="logo_wrap">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/logo_two.png" alt="логотип">
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+                
+
+            
+                <div class="right_group-block">
+                    <div class="office-exit_btn-block">
+                    
+                        <a class="office_items" href="#">личный кабинет</a>
+                
+                    
+                        <a class=exit_items href="#">выйти</a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="office-volonteers_wrap">
+                <h2 class="office-volonteers_header">Личный кабинет волонтера</h2>
+                <div class="edit-btn_block">
+                    <button class="edit_btn" id="edit_btn">редактировать</button>
+                </div>
+                
+                <div class="volontteers-items_block">
+                    <ul class="application_list">
+                        <li class="applications_items new">
+                            <p class="application_header" id="new">Новые заявки</p>
+                        </li>
+                        <li class="applications_items active">
+                            <p class="application_header" id="active">Активные заявки</p>
+                        </li>
+                        <li class="applications_items complete">
+                            <p class="application_header"  id="complete">Завершенные</p>
+                        </li>
+                        <li class="applications_items message">
+                            <p class="application_header" id="message">Сообщения</p>
+                        </li>
+                        <li class="applications_items-strip"><hr></li>
+                        <li class="applications_items help-people">
+                            <p class="application_header" id="help_people">Помощь людям</p>
+                        </li>
+                        <li class="applications_items help-animals">
+                            <p class="application_header" id="help_animals">Помощь животным</p>
+                        </li>
+                        <li class="applications_items events">
+                            <p class="application_header" id='events'>Мероприятия</p>
+                        </li>
+                        <li class="applications_items-strip"><hr></li>
+                        <li class="applications_items password" id= change_password>
+                            <p class="application_header">Изменить пароль</p>
+                        </li>
+                    </ul>
+                    <form class="volonteers-dic_list">
+                        <div class="volonteers-dis_items">
+                            <div class="volonteers-dic_img"  id="volonteers_load-img">Загрузите ваше фото</div>
+                            <div class="input_block-img">
+                                <!-- <input type="file" class="input_domload"   id="input_domload" onchange="readFile(this)">
+                                <input type="reset" value="очистить" class="clear" id="clear"> -->
+                            </div>
+                               
+                        </div>
+                        <div class="volonteers-dic_list_color dic-color_change">
+                            <p class="volonteer-dic_rating">рейтинг</p>
+                            <div class="star-img_wrap">
+                                <div class="star-dic_img"></div>
+                                <div class="star-dic_img"></div>
+                                <div class="star-dic_img"></div>
+                                <div class="star-dic_img"></div>
+                                <div class="star-dic_img"></div>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="volonteers-dic_btn-save">
+                            <button id="save" type="button"  class="save_btn">Сохранить</button>
+                          
+                        </div>
+                
+                    </form>
+                    <form id="volonteers-dic_data-list" class="volonteers-dic_data-list">
+                        <div id="name_block" class="name_block">
+                            <label class="option_item" for="surname"></label>
+                            <input class="option_input" id="surname" placeholder="Фамилия:" type="text">
+                        </div>
+                        <div id="name_block" class="name_block">
+                            <label class="option_item" for="name"></label>
+                            <input class="option_input" id="name" placeholder="Имя:" type="text">
+                        </div>
+                        <div id="name_block" class="name_block">
+                            <label class="option_item" for="patronymic"></label>
+                            <input class="option_input" id="patronymic" placeholder="Отчество:" type="text">
+                        </div>
+                        <div class="age_block">
+                            <label class="option_item" for="age"></label>
+                            <input class="option_input" id="age" placeholder="Возраст:" type="number">
+                        </div>
+                        <div class="adress_block">
+                            <label class="option_item" for="city"></label>
+                            <input class="option_input" id="city" placeholder="Город:" type="text">
+                        </div>
+                        <div class="adress_block">
+                            <label class="option_item" for="address"></label>
+                            <input class="option_input" id="address" placeholder="Адрес:" type="text">
+                        </div>
+                        <div class="contact-number_block">
+                            <label class="option_item" for="number"></label>
+                            <input class="option_input" id="number" placeholder="Телефон:" type="tel">  
+                        </div>
+                        <div class="contact-number_block">
+                            <label class="option_item" for="email"></label>
+                            <input class="option_input" id="email" placeholder="Почта:" type="email">  
+                        </div>
+                        <div class="about-me_block">
+                            <label class="option_item" for="about-me"></label>
+                            <textarea  class="option_textarea option_input" placeholder="Дополнительная информация:" name="about-me" id="about-me"></textarea>
+                        </div>
+                    
+                        
+                            <button type="button" id='help-people' class="help-people_btn">начать помогать</button>
+                    </form>
+                </div> 
+            </section>   
+            <section class="reviews-volunteers_wrap">
+                <h2 class="volunteers-reviews_header">Отзывы о волонтере</h2>
+                <ul class="reviews_list">
+                    <li class="reviews_items" id="1">
+                        <div class="reviews_img-one id=img_one"></div>
+                    </li>
+                    <li class="reviews_items">
+                        <div class="reviews_img-two" id="img_two"></div>
+                    </li>
+                    <li class="reviews_items">
+                        <div class="reviews_img-three" id="img_three"></div>
+                    </li>
+                    <li class="reviews_items">
+                        <div class="reviews_img-four" id="img_four"></div>
+                    </li>
+                    <li class="reviews_items">
+                        <div class="reviews_img-five" id="img_five"></div>
+                    </li>
+                    <li class="reviews_items">
+                        <div class="reviews_img-seven" id="img_seven"></div>
+                    </li>
+                </ul>
+                <div class="reviews_text-wrap">
+                    <div class="textarea_hover" name="" id="1" >какой-то текст при наведении на фото</div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_wrap">
+            <div class="logo_wrap">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logo_two.png" class='logo_img' alt="логотип">
+                    </a>
+                </div>
+                <ul class="footer_social-list">
+                    <li>
+                        <img src="img/youtube.png" alt="youtube">
+                    </li>
+                    <li>
+                        <img src="img/telegram.png" alt="telegram">
+                    </li>
+                </ul>
+            </div> 
+        
+
+            <a class="support" href="#">техподдержка</a>
+            <ul class="contacts_wrap">
+                <li class="contacts_items-phone">8 (928) 844-55-55</li>
+                <li class="contacts_items-email">Otklick@mail.com</li>
+                <li class="contacts_items-address">Москва, ул. Московская 125, оф. 100</li>
+            </ul>
+        </div>
+    </footer>
+   <script src="scripts/office_volunteers.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/message.css">
+    <title>Раздел сообщений</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrap">
+                <div class="search">
+                    <div class="search-img_block">
+                        <img src="img/search.png" class="search_img" alt="поиск">
+                    </div>
+                   
+                    <input type="search" class="site-search" name="search" placeholder="поиск...">
+                </div>
+                <div class="logo_wrap">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/logo_two.png" alt="логотип">
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="application_section-block">
+                <h2 class="message_header">сообщения</h2>
+                <ul class="application_sections-wrap">
+                    <li class="application_wrap-flex">
+                        <div class="new-application_img"></div>
+                    </li>
+                    <li class="new-applications_items">
+                        <div class="application_text">Здравствуйте, хотелось бы уточнить, вы бы смогли 
+                            оказать мне помощь 12 ноября, в 22:00 ?</div>
+                    </li class="new-applications_items">
+                    <li class="application_wrap-flex">
+                        <button class="white_btn" id="whiteBtn">написать</button>
+                       
+                    </li>
+                </ul>
+    
+                <ul class="application_sections-wrap">
+                    <li class="application_wrap-flex">
+                        <div class="new-application_img"></div>
+                    </li>
+                    <li>
+                        <div class="application_text">Здравствуйте, хотелось бы уточнить, вы бы смогли 
+                            оказать мне помощь 12 ноября, в 22:00 ?</div>
+                    </li>
+                    <li class="application_wrap-flex">
+                        <button  class="white_btn" id="white">написать</button>
+                    </li>
+                </ul>
+
+                <ul class="application_sections-wrap">
+                    <li class="application_wrap-flex">
+                        <div class="new-application_img"></div>
+                    </li>
+                    <li>
+                        <div class="application_text">Здравствуйте, хотелось бы уточнить, вы бы смогли 
+                            оказать мне помощь 12 ноября, в 22:00 ?                                              </div>
+                    </li>
+                    <li class="application_wrap-flex">
+                        <button  class="white_btn">написать</button>
+                    </li>
+                </ul>
+
+                <ul class="application_sections-wrap">
+                    <li class="application_wrap-flex">
+                        <div class="new-application_img"></div>
+                    </li>
+                    <li>
+                        <div class="application_text">Здравствуйте, хотелось бы уточнить, вы бы смогли 
+                            оказать мне помощь 12 ноября, в 22:00 ?</div>
+                    </li>
+                    <li class="application_wrap-flex">
+                        <button  class="white_btn">написать</button>
+                    </li>
+                </ul>
+    
+                   
+            </section>
+        </div>
+    </main>
+    </main>
+    <footer></footer>
+    <script>
+        let applications=document.querySelector('#white')
+        console.log(applications)
+        applications.addEventListener('click', function(e){
+            let target=e.target;
+            if(target.id=='white'){
+                window.location.href = 'dialogue.html';
+            }
+            if(target.id=='whiteBtn'){
+                window.location.href = 'dialogue.html';
+            }
+        })
+    </script>
+</body>
+</html>
